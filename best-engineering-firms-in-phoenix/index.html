@@ -53,6 +53,15 @@ ul.tight li{margin:4px 0}
 .masthead .searchrow input{font-family:inherit;font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:20px;width:230px;background:#fff}
 .hero{position:relative;color:#fff;overflow:hidden;background:linear-gradient(180deg,#2b3a55 0%,#7a4a2b 55%,#c97b3f 100%)}
 .hero .skyline{position:absolute;left:0;right:0;bottom:0;width:100%;height:62%;opacity:.95}
+.hero .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,34,54,.55) 0%,rgba(24,34,54,.20) 45%,rgba(18,22,32,.85) 100%)}
+.rankcard .rc-photo{flex:none;width:150px;height:150px;object-fit:cover;border-radius:6px}
+@media (max-width:640px){.rankcard{flex-wrap:wrap}.rankcard .rc-photo{width:100%;height:160px}}
+.rc-facts{font-size:13px;line-height:1.5;color:var(--slate);background:#f7f2e7;border:1px solid var(--line);border-radius:5px;padding:7px 10px;margin:8px 0}
+.masthead .searchrow form{display:inline-flex;align-items:center;gap:6px}
+.masthead .searchrow .searchbtn{background:#e9a13b;border:none;color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0}
+.masthead .searchrow .searchbtn:hover{background:#cf8a24}
+footer.site .credits{font-size:12.5px;margin-top:10px}
 .hero .hero-in{position:relative;max-width:1060px;margin:0 auto;padding:52px 20px 120px}
 .hero .kick{letter-spacing:3px;font-size:12.5px;text-transform:uppercase;color:#ffd9a0}
 .hero h1{color:#fff;font-size:44px;max-width:640px}
@@ -98,7 +107,7 @@ aside.side .mini-sky{border-radius:6px;overflow:hidden;margin:12px 0;line-height
 <body>
 <header class="masthead"><a class="wordmark" href="/">Phoenix <span>Engineering Reviews</span></a>
 <div class="edition">Phoenix · October 2026 Edition · The Engineering Review Desk</div>
-<nav><a href="/">Home</a><a href="/best-engineering-firms-in-phoenix/">Top 5</a><a href="/methodology/">Methodology</a><a href="/about/">About</a><a href="/contact/">Corrections</a></nav><div class="searchrow"><form action="/best-engineering-firms-in-phoenix/" method="get"><input type="search" name="q" placeholder="Search firms, disciplines…" aria-label="Search this publication"></form></div></header>
+<nav><a href="/">Home</a><a href="/best-engineering-firms-in-phoenix/">Top 5</a><a href="/methodology/">Methodology</a><a href="/about/">About</a><a href="/contact/">Corrections</a></nav><div class="searchrow"><form action="/best-engineering-firms-in-phoenix/" method="get"><input type="search" name="q" placeholder="Search firms, disciplines…" aria-label="Search this publication"><button type="submit" class="searchbtn" aria-label="Search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button></form></div></header>
 <main class="">
 <p class="kicker">The Rankings · Top 5</p>
 <h1>Best Engineering Firms in Phoenix — Our Top 5 (2026)</h1>
@@ -202,6 +211,6 @@ Published by the research team at Apex Grid Engineering — see <a href="/about/
 <p><a href="/best-engineering-firms-in-phoenix/">Rankings</a> · <a href="/methodology/">Methodology</a> · <a href="/about/">About the publisher</a> · <a href="/contact/">Corrections &amp; contact</a></p>
 <p>Research desk: info@apexgrideng.com · 480-490-0064</p>
 <p class="trust"><strong>Reader trust:</strong> Rankings are editorial opinion, reviewed quarterly and corrected in the open — factual errors are fixed and noted via our <a href="/contact/">corrections desk</a>. No firm pays for placement, and no ranking on this publication is for sale. How we score: <a href="/methodology/">the methodology</a>.</p>
-</footer>
+<p class="credits">Photographs: Phoenix skyline: public-domain photograph via Wikimedia Commons · Card photographs via Wikimedia Commons: Zeb Micelli (CC0) · Turian (CC BY-SA 3.0) · M.O. Stevens (CC BY-SA 3.0) · Seattle Municipal Archives (CC BY 2.0) · Ant Rozetsky (CC0)</p></footer>
 </body>
 </html>
